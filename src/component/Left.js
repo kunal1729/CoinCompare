@@ -5,6 +5,10 @@ import Indicator from './Indicator';
 const Left = () => {
 
   const {coinData, currency} = useContext(CryptoContext);
+  
+  if (!coinData) {
+    return null; 
+  }
 
   return (
     <div className='flex space-y-5 pl-2 mb-4 pr-2 flex-col w-full lg:w-[45%] h-full mr-2'>
