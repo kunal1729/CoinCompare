@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     // header
     <CryptoProvider>
-        <div className=" pb-10 bg-gray-100 bg-[url('./assets/homepage.avif')] min-h-screen bg-cover bg-center lg:pl-10 font-nunito ">
+        <div className=" pb-10 bg-gray-100 bg-[url('C:\Users\lenovo\Desktop\Crypto_Check\src\assets\homepage.avif')] min-h-screen bg-cover bg-center lg:pl-10 font-nunito ">
           <Navbar/>
           <Outlet/>
         </div>
