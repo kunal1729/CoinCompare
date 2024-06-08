@@ -6,6 +6,9 @@ import { NavLink, Outlet } from 'react-router-dom'
 const Trending = () => {
   
   const {trendingData} = useContext(CryptoContext)
+  if (!trendingData) {
+    return null; 
+  }
   
   return (
     <div className='mt-12 p-4 space-y-4 w-[80%] h-full border-2 border-gray-100 shadow-lg  m-auto rounded-md grid lg:grid-cols-2'>
